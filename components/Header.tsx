@@ -24,8 +24,12 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentView, isPremium, onU
   return (
     <header className="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-40 border-b border-gray-800">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <button onClick={(e) => handleNavClick(e, 'home')} className="text-2xl font-bold font-playfair text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 hover:text-purple-300 transition-colors">
-          AI Art & Sip
+        <button onClick={(e) => handleNavClick(e, 'home')} className="flex items-center hover:opacity-80 transition-opacity">
+          <img 
+            src="/images/artflow logo.png" 
+            alt="AI Art & Sip Logo" 
+            className="h-12 w-auto"
+          />
         </button>
         <nav className="hidden md:flex items-center space-x-8">
           <button onClick={(e) => handleNavClick(e, 'home', '#about')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About Us</button>
