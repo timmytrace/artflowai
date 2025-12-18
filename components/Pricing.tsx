@@ -17,87 +17,43 @@ const Pricing: React.FC<PricingProps> = ({ onUpgrade }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Free Tier */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex flex-col">
-            <h3 className="text-xl font-bold text-white mb-2">Visitor</h3>
-            <div className="text-4xl font-bold text-white mb-6">Free</div>
-            <p className="text-gray-400 mb-8">Perfect for trying out the digital canvas.</p>
-            <ul className="space-y-4 mb-8 flex-1">
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                Free Paint Mode
-              </li>
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                Basic Brushes (Round, Square)
-              </li>
-              <li className="flex items-center text-gray-500">
-                <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                AI Idea Generation
-              </li>
-              <li className="flex items-center text-gray-500">
-                <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                AI Instructor Lessons
-              </li>
-            </ul>
-            <button className="w-full py-3 rounded-full border border-gray-600 text-white font-bold hover:bg-gray-700 transition-colors">
-              Current Plan
-            </button>
-          </div>
-
-          {/* Day Pass */}
-          <div className="bg-gray-800 rounded-2xl p-8 border-2 border-purple-500 relative transform md:-translate-y-4 shadow-2xl flex flex-col">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-bold">
-              Most Popular
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-purple-900/50 to-pink-900/50 rounded-2xl p-12 border border-purple-500/30 text-center backdrop-blur-sm">
+            <div className="inline-block bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-6">
+              Limited Time Offer
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Day Pass</h3>
-            <div className="text-4xl font-bold text-white mb-1">$4.99</div>
-            <span className="text-sm text-gray-400 mb-6">/ 24 hours</span>
-            <p className="text-gray-400 mb-8">Full access for a fun date night or solo session.</p>
-            <ul className="space-y-4 mb-8 flex-1">
-              <li className="flex items-center text-white">
-                <svg className="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+            <h3 className="text-3xl font-bold text-white mb-4">All Features Are Currently Free!</h3>
+            <p className="text-xl text-gray-300 mb-8">
+              We are in early access. Enjoy unlimited AI generation, advanced brushes, and instructor lessons on us.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto mb-8">
+              <div className="flex items-center text-gray-200">
+                <svg className="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 Unlimited AI Image Generation
-              </li>
-              <li className="flex items-center text-white">
-                <svg className="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div className="flex items-center text-gray-200">
+                <svg className="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 Full AI Instructor Access
-              </li>
-              <li className="flex items-center text-white">
-                <svg className="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div className="flex items-center text-gray-200">
+                <svg className="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 Advanced Brushes (Watercolor, etc.)
-              </li>
-              <li className="flex items-center text-white">
-                <svg className="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div className="flex items-center text-gray-200">
+                <svg className="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 Save & Load Sessions
-              </li>
-            </ul>
+              </div>
+            </div>
+
             <button 
-              onClick={onUpgrade}
-              className="w-full py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold hover:shadow-lg hover:scale-105 transition-all"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg hover:shadow-lg hover:scale-105 transition-all"
             >
-              Get Day Pass
+              Start Creating Now
             </button>
           </div>
-
-          {/* Monthly */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex flex-col">
-            <h3 className="text-xl font-bold text-white mb-2">Pro Artist</h3>
-            <div className="text-4xl font-bold text-white mb-1">$14.99</div>
-            <span className="text-sm text-gray-400 mb-6">/ month</span>
-            <p className="text-gray-400 mb-8">For the dedicated creative.</p>
-            <ul className="space-y-4 mb-8 flex-1">
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                Everything in Day Pass
-              </li>
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                High-Res Downloads
-              </li>
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+        </div>
                 Priority Generation
               </li>
               <li className="flex items-center text-gray-300">

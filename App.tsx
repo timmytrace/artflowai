@@ -18,8 +18,8 @@ const App: React.FC = () => {
   const [selectedPainting, setSelectedPainting] = useState<Painting | null>(null);
   const [studioPainting, setStudioPainting] = useState<Painting | null>(null);
   
-  // Monetization State: Default to false (Free user)
-  const [isPremium, setIsPremium] = useState(false);
+  // Monetization State: Default to true (Free for now)
+  const [isPremium, setIsPremium] = useState(true);
 
   const handleNavigate = (targetView: ViewState) => {
     setView(targetView);
