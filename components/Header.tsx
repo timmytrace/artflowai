@@ -32,10 +32,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentView, isPremium, onU
           />
         </button>
         <nav className="hidden md:flex items-center space-x-8">
-          <button onClick={(e) => handleNavClick(e, 'home', '#about')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About Us</button>
+          <button onClick={(e) => handleNavClick(e, 'home', '#about')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About</button>
+          <button onClick={(e) => handleNavClick(e, 'home', '#product')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Product</button>
+          <button onClick={(e) => handleNavClick(e, 'home', '#team')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Team</button>
           <button onClick={(e) => handleNavClick(e, 'home', '#how-it-works')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">How It Works</button>
-          <button onClick={(e) => handleNavClick(e, 'home', '#pricing')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Pricing</button>
-          <button onClick={(e) => handleNavClick(e, 'home', '#reviews')} className="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Reviews</button>
           
           {isPremium ? (
               <div className="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-purple-900 to-indigo-900 rounded-full border border-purple-500/50">

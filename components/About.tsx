@@ -16,24 +16,32 @@ const About: React.FC = () => {
           </div>
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-3xl md:text-5xl font-bold font-playfair text-white">
-              Reimagining the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Art Studio</span>
+              Democratizing <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Digital Art Creation</span>
             </h2>
             <div className="w-20 h-1 bg-purple-600 rounded-full"></div>
             <p className="text-gray-300 text-lg leading-relaxed">
-              At AI Art & Sip, we believe creativity shouldn't be limited by logistics. We've merged the traditional charm of a wooden easel with the limitless potential of Generative AI.
+              <strong>Artflow AI</strong> is a next-generation digital art platform that combines the intuitive experience of traditional painting with the power of artificial intelligence. We're solving the accessibility problem in digital art creation.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Whether you're a seasoned artist or have never held a brush, our intelligent instructor guides you step-by-step, turning your wildest ideas into digital masterpieces. It's not just an app; it's a sanctuary for your imagination.
+              <strong>The Problem:</strong> Traditional art requires years of training. Complex digital tools like Photoshop have steep learning curves. AI art generators lack interactivity and personalization.
+            </p>
+            <p className="text-gray-400 leading-relaxed">
+              <strong>Our Solution:</strong> An AI-powered canvas with real-time instruction, generative image creation from text, and professional-grade tools accessible to everyone—regardless of artistic background.
             </p>
             <div className="pt-4 flex gap-4">
                 <div className="text-center">
-                    <h4 className="text-3xl font-bold text-white">10k+</h4>
-                    <p className="text-sm text-gray-500 uppercase tracking-wide">Artworks Created</p>
+                    <h4 className="text-3xl font-bold text-white">Beta</h4>
+                    <p className="text-sm text-gray-500 uppercase tracking-wide">Live & Accessible</p>
                 </div>
                 <div className="w-px bg-gray-700"></div>
                 <div className="text-center">
-                    <h4 className="text-3xl font-bold text-white">∞</h4>
-                    <p className="text-sm text-gray-500 uppercase tracking-wide">Possibilities</p>
+                    <h4 className="text-3xl font-bold text-white">100%</h4>
+                    <p className="text-sm text-gray-500 uppercase tracking-wide">Free Access</p>
+                </div>
+                <div className="w-px bg-gray-700"></div>
+                <div className="text-center">
+                    <h4 className="text-3xl font-bold text-white">AI</h4>
+                    <p className="text-sm text-gray-500 uppercase tracking-wide">Powered</p>
                 </div>
             </div>
           </div>

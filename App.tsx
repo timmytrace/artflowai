@@ -10,6 +10,8 @@ import InteractiveStudio from './components/InteractiveStudio';
 import PaintingGenerator from './components/PaintingGenerator';
 import About from './components/About';
 import Pricing from './components/Pricing';
+import Team from './components/Team';
+import Product from './components/Product';
 
 type ViewState = 'home' | 'studio';
 
@@ -63,6 +65,10 @@ const App: React.FC = () => {
             <Hero onNavigateToStudio={() => handleNavigate('studio')} />
             
             <About />
+            
+            <Product />
+            
+            <Team />
 
             {/* Replaced EventGrid with PaintingGenerator */}
             <PaintingGenerator onPaintInStudio={handlePaintInStudio} />
