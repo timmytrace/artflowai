@@ -54,21 +54,6 @@ const Pricing: React.FC<PricingProps> = ({ onUpgrade }) => {
             </button>
           </div>
         </div>
-                Priority Generation
-              </li>
-              <li className="flex items-center text-gray-300">
-                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                Community Gallery Access
-              </li>
-            </ul>
-            <button 
-              onClick={onUpgrade}
-              className="w-full py-3 rounded-full bg-gray-700 hover:bg-gray-600 text-white font-bold transition-colors"
-            >
-              Subscribe
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
